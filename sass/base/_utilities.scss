@@ -1,0 +1,38 @@
+// FONT SIZE
+.fs-2 {
+    font-size: 2rem;
+}
+
+.fs-4 {
+    font-size: 10rem !important; 
+}
+
+.primary-color {
+    color: $primary-color;
+}
+.color-black {
+    color: black !important;
+}
+// GRID
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.mr-p5 {
+    margin-right: .5rem;
+}
+
+.wrapper {
+    margin: 0 $default-horizontal-margin;
+    
+}
+
+.space-between {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opacity-3 {
+    opacity: 0.3; 
+}

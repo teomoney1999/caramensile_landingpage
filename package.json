@@ -1,0 +1,19 @@
+{
+  "name": "caramensile",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass sass/main.scss styles/main.css -w",
+    "start": "node --experimental-json-modules js/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "http-server": "^14.1.1",
+    "node-sass": "^8.0.0"
+  }
+}

@@ -1,0 +1,40 @@
+.nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  // border: 1px solid black;
+  font-size: $default-font-size;
+  background: rgba(255, 255, 255, 0);
+  z-index: 1000;
+  height: 10rem;
+
+  &__contact:last-child {
+    padding-right: 0rem;
+  }
+  &-item {
+    padding: 0 1rem;
+  }
+  &__icon {
+    width: auto;
+    height: 5rem;
+  }
+  &-item:last-child {
+    padding-right: 0rem;
+  }
+  &__fa {
+    color: white;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav {
+ 
+   
+  }
+  .navbar-expand-xs {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
