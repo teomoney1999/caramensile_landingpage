@@ -4,20 +4,38 @@
   &__box {
     width: 50%;
     text-align: center;
+    justify-content: center;
     margin: 0 auto $default-margin auto !important;
     &__title {
       font-size: 5rem;
       font-weight: 700;
     }
     &__description {
+      width: 80% !important;
       font-size: 1.6rem;
     }
   }
 }
 
 .menu-item {
-  margin-bottom: 1.5rem;
+  position: relative;
+  margin-bottom: 2rem;
   cursor: pointer;
+  &__out-of-stock {
+    position: absolute;
+    font-size: 2rem;
+    color: red;
+    rotate: -48deg;
+    top: 25%;
+    left: 40%;
+    font-weight: 700;
+    z-index: 10;
+  }
+  &__pre-order {
+    position: absolute;
+    right: 30%;
+    font-size: 1.4rem !important;
+  }
   &__info {
     display: flex;
     justify-content: space-between;
@@ -47,11 +65,10 @@ $menu-margin-bottom: 1.5rem;
     &__col {
       display: inline-grid;
       width: 100% !important;
-      margin-bottom: $menu-margin-bottom;
+      // margin-bottom: $menu-margin-bottom;
     }
     &__box {
       width: 90%;
-      justify-content: center;
       margin: 0 auto 3rem auto !important;
       &__title {
         margin-bottom: $menu-margin-bottom;
@@ -64,6 +81,15 @@ $menu-margin-bottom: 1.5rem;
   }
 
   .menu-item {
+    &__out-of-stock {
+      left: 45%;
+      rotate: -45deg;
+    }
+    &__pre-order {
+      right: 16%;
+      top: 2%;
+      font-size: 1.2rem !important;
+    }
     &__info {
       width: 100%;
       &__name {
@@ -75,9 +101,6 @@ $menu-margin-bottom: 1.5rem;
       }
     }
     &__price {
-
     }
   }
-
-  
 }

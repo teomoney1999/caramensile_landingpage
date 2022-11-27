@@ -71,16 +71,32 @@ a {
   .menu__box {
     width: 50%;
     text-align: center;
+    justify-content: center;
     margin: 0 auto 8rem auto !important; }
     .menu__box__title {
       font-size: 5rem;
       font-weight: 700; }
     .menu__box__description {
+      width: 80% !important;
       font-size: 1.6rem; }
 
 .menu-item {
-  margin-bottom: 1.5rem;
+  position: relative;
+  margin-bottom: 2rem;
   cursor: pointer; }
+  .menu-item__out-of-stock {
+    position: absolute;
+    font-size: 2rem;
+    color: red;
+    rotate: -48deg;
+    top: 25%;
+    left: 40%;
+    font-weight: 700;
+    z-index: 10; }
+  .menu-item__pre-order {
+    position: absolute;
+    right: 30%;
+    font-size: 1.4rem !important; }
   .menu-item__info {
     display: flex;
     justify-content: space-between;
@@ -98,17 +114,22 @@ a {
 @media only screen and (max-width: 600px) {
   .menu__col {
     display: inline-grid;
-    width: 100% !important;
-    margin-bottom: 1.5rem; }
+    width: 100% !important; }
   .menu__box {
     width: 90%;
-    justify-content: center;
     margin: 0 auto 3rem auto !important; }
     .menu__box__title {
       margin-bottom: 1.5rem;
       font-size: 5rem; }
     .menu__box__description {
       width: 75% !important; }
+  .menu-item__out-of-stock {
+    left: 45%;
+    rotate: -45deg; }
+  .menu-item__pre-order {
+    right: 16%;
+    top: 2%;
+    font-size: 1.2rem !important; }
   .menu-item__info {
     width: 100%; } }
 
